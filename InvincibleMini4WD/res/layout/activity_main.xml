@@ -8,9 +8,70 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:columnCount="5" >
+
+        <Button
+            android:id="@+id/auto_stop"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="Stop" />
+
+        <TextView
+            android:id="@+id/auto_label"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:text="Automatic: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/auto_start"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/manual_stop"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="Stop" />
+
+        <TextView
+            android:id="@+id/manual_label"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="Manual: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/manual_forward"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="Forward" />
+
+        <Button
+            android:id="@+id/manual_backward"
+            android:layout_column="3"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="Backward" />
+
+        <Button
+            android:id="@+id/manual_brake"
+            android:layout_column="4"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="Brake" />
+    </GridLayout>
 
 </RelativeLayout>

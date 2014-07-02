@@ -37,6 +37,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		manual_backward = (Button)findViewById(R.id.manual_backward);
 		manual_brake = (Button)findViewById(R.id.manual_brake);
 		
+		//////////
+		auto_label.setEnabled(false);
+		auto_stop.setEnabled(false);
+		auto_start.setEnabled(false);
+		//////////
+		
+		
+		
 		auto_stop.setOnClickListener(this);
 		auto_start.setOnClickListener(this);
 		manual_stop.setOnClickListener(this);
